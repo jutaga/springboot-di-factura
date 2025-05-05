@@ -26,4 +26,8 @@ public class Item {
         this.quantity = quantity;
     }
 
+    public int getImporte() {
+        return product.getPrice() * quantity;
+    }
+
 }

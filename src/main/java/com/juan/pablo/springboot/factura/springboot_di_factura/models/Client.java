@@ -2,8 +2,12 @@ package com.juan.pablo.springboot.factura.springboot_di_factura.models;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
+import org.springframework.web.context.annotation.RequestScope;
+
 
 @Component
+@RequestScope
+//@JsonIgnoreProperties({ "targetSource", "advisors" })
 public class Client {
     @Value("${client.name}")
     private String name;
